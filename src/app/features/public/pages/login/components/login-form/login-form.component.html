@@ -8,12 +8,14 @@
         id="email"
         formControlName="email"
       />
-      <label class="label" *ngIf="loginForm.controls['email'].touched">
+      <label *ngIf="loginForm.controls['email'].touched">
         <span
-          *ngIf="!loginForm.controls['email'].valid"
-          class="label-text-alt text-error"
-          >Campo incorrecto</span
+          class="label-text-alt"
+          customLabel
+          [errors]="loginForm.get('email')?.errors"
+          [color]="'text-error'"
         >
+        </span>
       </label>
     </div>
     <div class="form-control w-full mt-4">
@@ -27,12 +29,14 @@
         />
         <shared-eye-btn />
       </div>
-      <label class="label" *ngIf="loginForm.controls['password'].touched">
+      <label *ngIf="loginForm.controls['password'].touched">
         <span
-          *ngIf="!loginForm.controls['password'].valid"
-          class="label-text-alt text-error"
-          >Campo incorrecto</span
+          class="label-text-alt"
+          customLabel
+          [errors]="loginForm.get('password')?.errors"
+          [color]="'text-error'"
         >
+        </span>
       </label>
     </div>
   </div>
