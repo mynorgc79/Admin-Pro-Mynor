@@ -35,7 +35,12 @@ export class LoginFormComponent {
           next: () => this.router.navigateByUrl('/dashboard'),
           error: (message) => {
             console.log(message);
-            this.toastService.show('error', message, faCircleXmark);
+            this.toastService.show({
+              color: 'error',
+              message,
+              icon: faCircleXmark,
+              duration: 4000,
+            });
           },
         });
     }
