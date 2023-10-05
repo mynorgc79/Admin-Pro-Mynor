@@ -1,3 +1,4 @@
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -19,6 +20,6 @@ import {
     SidebarComponent,
     AdminLayoutComponent,
   ],
-  imports: [CommonModule, AdminLayoutRoutingModule],
+  imports: [CommonModule, AdminLayoutRoutingModule, FontAwesomeModule],
 })
 export class AdminLayoutModule {}
