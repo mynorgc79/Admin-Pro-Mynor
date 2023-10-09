@@ -23,6 +23,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('@features/admin').then((m) => m.ProgressModule),
       },
+      {
+        path: 'user-profile',
+        loadChildren: () =>
+          import('@features/admin').then((m) => m.ProfileModule),
+      },
     ],
   },
 ];
