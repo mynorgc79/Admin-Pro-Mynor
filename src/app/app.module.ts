@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SpinnerComponent } from './shared/components/spinner/spinner.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -14,6 +15,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AppRoutingModule,
     FontAwesomeModule,
     HttpClientModule,
+    SpinnerComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
