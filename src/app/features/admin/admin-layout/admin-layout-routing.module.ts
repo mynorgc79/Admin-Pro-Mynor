@@ -14,9 +14,9 @@ const routes: Routes = [
           import('@features/admin').then((m) => m.DashboardModule),
       },
       {
-        path: 'grafical',
+        path: 'animals',
         loadChildren: () =>
-          import('@features/admin').then((m) => m.GraficalModule),
+          import('@features/admin').then((m) => m.AnimalsModule),
       },
       {
         path: 'progress',
