@@ -19,14 +19,23 @@ const routes: Routes = [
           import('@features/admin').then((m) => m.AnimalsModule),
       },
       {
-        path: 'progress',
+        path: 'biome',
         loadChildren: () =>
-          import('@features/admin').then((m) => m.ProgressModule),
+          import('@features/admin').then((m) => m.BiomeModule),
+      },
+      {
+        path: 'species',
+        loadChildren: () =>
+          import('@features/admin').then((m) => m.SpeciesModule),
       },
       {
         path: 'user-profile',
         loadChildren: () =>
           import('@features/admin').then((m) => m.ProfileModule),
+      },
+      {
+        path: 'diet',
+        loadChildren: () => import('@features/admin').then((m) => m.DietModule),
       },
     ],
   },
